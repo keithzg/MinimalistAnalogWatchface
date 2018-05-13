@@ -373,7 +373,12 @@ public class MyWatchFace extends CanvasWatchFaceService {
                         mCenterX,
                         mCenterY - mSecondHandLength,
                         mSecondPaint);
-
+                canvas.drawLine(
+                        mCenterX,
+                        mCenterY,
+                        mCenterX,
+                        mCenterY + (sHourHandLength)/5,
+                        mSecondPaint);
             }
 
 
